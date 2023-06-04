@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Article preview component</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+
+<!-- <body class="flex justify-center items-center min-h-screen">
+  <main class="max-w-2xl flex gap-5 border border-slate-600 w-full rounded-lg">
+    <div class="w-2/5 h-full">
+      <img src="./images/drawers.jpg" alt="" class="block rounded-tl-lg rounded-bl-lg w-full h-full object-cover">
+    </div>
+    <div class="flex flex-col gap-4 p-4 w-3/5">
+      <h1 class="font-semibold text-slate-600">Shift the overall look and feel by adding these wonderful
+        touches to furniture in your home</h1>
+        <p class="text-slate-400 text-sm">Ever been in a room and felt like something was missing? Perhaps
+          it felt slightly bare and uninviting. I’ve got some simple tips
+          to help you make any room feel complete.</p>
+        <div class="flex items-center">
+          <img src="./images/avatar-michelle.jpg" alt="" class="w-12 h-12 rounded-full">
+          <div> 
+            <p class="font-semibold" >Michelle Appleton</p>
+            <p>28 Jun 2020</p>
+          </div>
+          <div class="ml-auto">
+            <img src="./images/icon-share.svg" alt="">
+          </div>
+        </div>
+    </div>
+  </main> -->
+
+  <main>
+    <div class="img-div">
+      <img src="./images/drawers.jpg" alt="" style="display: block;">
+    </div>
+    <div class="text-div">
+      <h1>Shift the overall look and feel by adding these wonderful
+        touches to furniture in your home</h1>
+        <p>Ever been in a room and felt like something was missing? Perhaps
+          it felt slightly bare and uninviting. I’ve got some simple tips
+          to help you make any room feel complete.</p>
+        <div class="profile">
+          <img src="./images/avatar-michelle.jpg" alt="" id="avatar">
+          <div> 
+            <p style="color:rgb(54, 66, 78);font-weight: 600;">Michelle Appleton</p>
+            <p>28 Jun 2020</p>
+          </div>
+          <div class="share-div">
+            <img src="./images/icon-share.svg" alt="" id="share">
+          </div>
+          <div class="onhover d-none">
+            <p>SHARE</p>
+            <img src="./images/icon-facebook.svg" alt="">
+            <img src="./images/icon-twitter.svg" alt="">
+            <img src="./images/icon-pinterest.svg" alt="">
+            <span></span>
+          </div>
+        </div>
+    </div>
+  </main>
+
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script>
+    const share = document.querySelector('#share');
+    const onhover = document.querySelector('.onhover');
+    share.addEventListener('click',()=>{
+      onhover.classList.toggle('d-none');
+    })
+  </script>
+</body>
+
+</html>
